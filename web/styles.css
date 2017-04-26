@@ -25,14 +25,22 @@ body {
     bottom: 0;
     margin: auto;
     position: absolute;
-    background: #888;
+    background: #000;
 
     width: 400px;
     height: 150px;
 }
 
 p.onload {
-    color: aqua;
+    color: cyan;
     text-align: center;
     font-size: 18pt;
+}
+
+.bar {
+    width: 95%;
+    height: 50px;
+    background: #000;
+    margin: auto;
+    border: #11ebff solid 1px;
 }

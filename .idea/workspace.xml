@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33599f1f-89e5-437b-a05e-fbbb00249f1d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../arkanoid/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../arkanoid/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../arkanoid/web/index.html" afterPath="$PROJECT_DIR$/../arkanoid/web/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../arkanoid/web/styles.css" afterPath="$PROJECT_DIR$/../arkanoid/web/styles.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -96,7 +95,7 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../arkanoid/web/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="231">
               <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding />
             </state>
@@ -298,7 +297,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492879762532</updated>
-      <workItem from="1492879766332" duration="15122000" />
+      <workItem from="1492879766332" duration="15444000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1492880078940</created>
@@ -314,11 +313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493165484969</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="loading">
+      <created>1493166384758</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1493166384758</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15122000" />
+    <option name="totallyTimeSpent" value="15444000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -383,7 +389,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="loading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -512,7 +519,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../arkanoid/web/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="231">
           <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding />
         </state>
