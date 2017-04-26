@@ -1,4 +1,4 @@
-library arkanoid.web.lib;
+library arkanoid.lib;
 
 class Color {
 

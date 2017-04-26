@@ -1,4 +1,4 @@
-import 'lib/Color.dart';
+import 'package:untitled1/Color.dart';
 import 'dart:html';
 
 class Theme {

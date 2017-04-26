@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-
-<!--
-  Copyright (c) 2017, loinasd. All rights reserved. Use of this source code
-  is governed by a BSD-style license that can be found in the LICENSE file.
--->
-
 <html>
-<head>
+  <head>
+    <script>
+        // WARNING: DO NOT set the <base href> like this in production!
+        // Details: https://webdev.dartlang.org/angular/guide/router
+        (function () {
+            // App being served out of web folder (like WebStorm does)?
+            var match = document.location.pathname.match(/^\/[-\w]+\/web\//);
+            var href = match ? match[0] : '/';
+            document.write('<base href="' + href + '" />');
+        }());
+    </script>
+
+    <title>untitled1</title>
     <meta charset="utf-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="scaffolded-by" content="https://github.com/google/stagehand">-->
-    <title>ARKANOID</title>
-    <link rel="stylesheet" href="styles/onload.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-
-<body>
-
-    <div class="container-onload onload">
-        <p class="onload">LOADING...</p>
-        <div class="bar onload">
-            <div class="rect r1 onload"></div>
-            <div class="rect r2 onload"></div>
-            <div class="rect r3 onload"></div>
-            <div class="rect r4 onload"></div>
-            <div class="rect r5 onload"></div>
-        </div>
-    </div>
-
-   <!-- <canvas id="stage" class="stage&#45;&#45;fullscreen"></canvas>-->
-
-</body>
-<script defer src="main2.dart" type="application/dart"></script>
-<script defer src="packages/browser/dart.js"></script>
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
 </html>
