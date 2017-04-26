@@ -1,25 +1,33 @@
-// Copyright (c) 2017, loinasd. All rights reserved. Use of this source code
-// is governed by a BSD-style license that can be found in the LICENSE file.
-
 import 'dart:async';
-import 'dart:html' as html;
-import 'package:stagexl/stagexl.dart';
-import 'dart:math';
+import 'dart:html' deferred as html;
+import 'package:stagexl/stagexl.dart' deferred as stagexl;
+import 'dart:math' deferred as math;
 import 'appearance.dart';
 
-Future<Null> main() async {
-  StageOptions options = new StageOptions()
-    ..backgroundColor = Color.White
-    ..renderEngine = RenderEngine.WebGL;
+Theme oldFag = new Theme("OLDFAG", Color.Black, Color.DarkCyan, Color.Gray);
 
+//TODO: Theme currentTheme; choosing themes
+Theme currentTheme = oldFag;
+
+Future<Null> main() async {
+
+  _loading();
+  StageOptions options;
+  options = new StageOptions()
+    ..backgroundColor = currentTheme.getBG()
+    ..renderEngine = RenderEngine.WebGL;
   var canvas = html.querySelector('#stage');
   var stage = new Stage(canvas, width: 1280, height: 800, options: options);
 
   var renderLoop = new RenderLoop();
   renderLoop.addStage(stage);
 
-  var resourceManager = new ResourceManager();
-  resourceManager.addBitmapData("dart", "images/dart@1x.png");
+  _loading(stage);
+
+
+
+/*  var resourceManager = new ResourceManager();
+  resourceManager.addBitmapData("dart", "images/dart@2x.png");
 
   await resourceManager.load();
 
@@ -53,4 +61,15 @@ Future<Null> main() async {
 
   // See more examples:
   // https://github.com/bp74/StageXL_Samples
+}*/
+}
+
+ Future _loading() async {
+
+  await html.loadLibrary();
+
+  await stagexl.loadLibrary();
+
+  await math.loadLibrary();
+
 }
