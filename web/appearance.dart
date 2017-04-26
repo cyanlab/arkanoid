@@ -1,4 +1,4 @@
-import 'package:stagexl/src/ui/color.dart';
+import 'lib/Color.dart';
 import 'dart:html';
 
 class Theme {

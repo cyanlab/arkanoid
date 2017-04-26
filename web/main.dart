@@ -1,3 +1,4 @@
+/*
 // Copyright (c) 2017, loinasd. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
@@ -12,7 +13,8 @@ Future<Null> main() async {
     ..backgroundColor = Color.White
     ..renderEngine = RenderEngine.WebGL;
 
-  var canvas = html.querySelector('#stage');
+  */
+/*var canvas = html.querySelector('#stage');
   var stage = new Stage(canvas, width: 1280, height: 800, options: options);
 
   var renderLoop = new RenderLoop();
@@ -47,10 +49,11 @@ Future<Null> main() async {
     if (rotation != null) return;
     rotation = stage.juggler.addTween(logo, 0.5, Transition.easeInOutCubic);
     rotation.animate.rotation.by(2 * PI);
-    rotation.onComplete = () => rotation = null;
   });
+    rotation.onComplete = () => rotation = null;
   logo.mouseCursor = MouseCursor.POINTER;
 
   // See more examples:
   // https://github.com/bp74/StageXL_Samples
 }
+*/

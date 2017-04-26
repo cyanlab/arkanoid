@@ -1,16 +1,3 @@
-/*
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-*/
-
-html, body, .stage--fullscreen {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-
-}
-
 body {
     background: #000;
     justify-content: space-around;
@@ -18,7 +5,7 @@ body {
     width: 100%;
 }
 
-.container {
+.container-onload{
     top: 0;
     left: 0;
     right: 0;
@@ -44,12 +31,33 @@ p.onload {
     margin: auto;
     border: #11ebff solid 1px;
     display: flex;
+    border-radius: 7px;
 }
 
 .rect {
     width: 100%;
     height: 80%;
     margin: 5px;
-    background: cyan;
+    border-radius: 5px;
 
+}
+
+.r1 {
+    background: #000;
+}
+
+.r2 {
+    background: #000;
+}
+
+.r3 {
+    background: #000;
+}
+
+.r4 {
+    background: #000;
+}
+
+.r5 {
+    background: #000;
 }
