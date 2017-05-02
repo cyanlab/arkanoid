@@ -4,23 +4,23 @@ import 'dart:html';
 class Theme {
 
   final String NAME;
-  final int _BACKGROUND;
-  final int _PRIMARY_ACCENT;
-  final int _ACCENT;
+  final String _BACKGROUND;
+  final String _PRIMARY_ACCENT;
+  final String _ACCENT;
 
   Theme(this.NAME, this._BACKGROUND, this._PRIMARY_ACCENT, this._ACCENT) {
     print("Seting theme ${this.NAME}");
   }
 
-  int getBG() {
+  String getBG() {
     return this._BACKGROUND;
   }
 
-  int getPA() {
+  String getPA() {
     return this._PRIMARY_ACCENT;
   }
 
-  int getA() {
+  String getA() {
     return this._ACCENT;
   }
 

@@ -1,17 +1,24 @@
+import 'package:angular2/angular2.dart';
+import 'package:angular2/platform/browser.dart';
 import 'dart:async';
 import 'dart:html';
 import 'dart:math' deferred as math;
 import 'package:arkanoid/appearance.dart';
-import 'package:arkanoid/Color.dart' deferred as Color;
+import 'package:arkanoid/Color.dart';
+import 'package:arkanoid/app_component.dart';
 
 
+Theme mainCyan = new Theme("MAINCYAN", Color.Black, Color.DarkCyan, Color.Gray);
 
- Future<Null> main() async {
+//TODO: Theme currentTheme; choosing themes
+Theme currentTheme = mainCyan;
 
-  _loading();
+ Future<ComponentRef> main() async {
 
-  /*startMainMenu();*/
+  if (_loading())
+    startMainMenu();
 
+  return bootstrap(AppComponent);
 
 }
 
@@ -19,28 +26,22 @@ import 'package:arkanoid/Color.dart' deferred as Color;
 
 
 
-  querySelector('.r1').style.background = '#11ebff';
+  querySelector('.r1').style.background = currentTheme.getBG();
 
   math.loadLibrary();
 
-  querySelector('.r2').style.background = '#11ebff';
-
-  Color.loadLibrary();
-
-  querySelector('.r3').style.background = '#11ebff';
-
-  Theme oldFag = new Theme("OLDFAG", Color.Color.Black, Color.Color.DarkCyan, Color.Color.Gray);
-
-//TODO: Theme currentTheme; choosing themes
-   Theme currentTheme = oldFag;
+  querySelector('.r2').style.background = currentTheme.getBG();
 
 
-   Node canvas = new Element.canvas();
+  querySelector('.r3').style.background = currentTheme.getBG();
 
- Element cv = new Element.html('<canvas id="stage" class="stage&#45;&#45;fullscreen"></canvas>');
 
-   querySelector(".container-onload").replaceWith(cv);
-   print(cv);
+  // Node canvas = new Element.canvas();
+
+ //Element cv = new Element.html('<canvas id="stage" class="stage&#45;&#45;fullscreen"></canvas>');
+
+   //querySelector(".container-onload").replaceWith(cv);
+   //print(cv);
   return true;
 }
 
